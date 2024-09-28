@@ -7,6 +7,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.graphics.Color
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,5 +26,12 @@ class MainActivity : AppCompatActivity() {
         // Load and use views afterwards
         val tvMain: TextView = findViewById(R.id.tvMain)
         tvMain.text = "Sveiki"
+    }
+
+    fun btnChangeColourClick(view: View) {
+        // Load and use views afterwards
+        val tvMain: TextView = findViewById(R.id.tvMain)
+        tvMain.text = "Sveiki"
+        tvMain.setTextColor(Color.RED) // Change text color to red
     }
 }
